@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<title>CoffeShop</title>
+<body>
+    <h1>Welcome to Webb21-group2 Coffeshop</h1>
+    
+    <div>
+        <label for="coffeeTypes">Välja kaffesort</label>
+        <select name="coffeeTypes" id="coffeeTypes">
+            <option>Brygg Kaffe - 20kr</option>
+            <option>Cappucino - 30kr</option>
+            <option>Latte - 40kr</option>
+        </select>
+        <label for="takeOrders"></label>
+        <input type="text" id="takeOrders" placeholder="1 or more">
+        <button onclick="master(); emptyTextField()">Köp</button>
+        <p id="parent"></p>
+        <hr>
+    </div>
+    <h1 id="title">Du har inga transaktioner</h1>
+    <div>
+        <p id="letItBeFirst"></p>
+        <p id="second"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
