@@ -8,8 +8,8 @@ let costs = 0
 let totalCost = 0
 let membersStatus = ""
 let remaining = 0
-let _10PercentDiscount = 0
-let _15PercentDiscount = 0
+let With10PercentOff = 0
+let With15PercentOff = 0
 let finalCost = 0
 let myArchive = []
 
@@ -25,13 +25,13 @@ function master() {
         finalCost = totalCost
         // giving discount
         if (totalCost>=500) {
-            _10PercentDiscount = ((totalCost-500)*0.9)+500
-            finalCost = _10PercentDiscount
-            console.log(_10PercentDiscount);
-            if (_10PercentDiscount>=1000) {
-                _15PercentDiscount = ((_10PercentDiscount-1000)*0.85)+1000
-                finalCost = _15PercentDiscount
-                console.log(_15PercentDiscount);
+            With10PercentOff = ((totalCost-500)*0.9)+500
+            finalCost = With10PercentOff
+            console.log(With10PercentOff);
+            if (With10PercentOff>=1000) {
+                With15PercentOff = ((With10PercentOff-1000)*0.85)+1000
+                finalCost = With15PercentOff
+                console.log(With15PercentOff);
             }
         }
 
